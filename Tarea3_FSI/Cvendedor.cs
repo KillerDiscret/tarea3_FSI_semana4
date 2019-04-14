@@ -51,7 +51,7 @@ namespace Tarea3_FSI
         {
             codigo = acodigo;
             nombre = anombre;
-            amonto = monto;
+            monto = amonto;
         }
     }
 }

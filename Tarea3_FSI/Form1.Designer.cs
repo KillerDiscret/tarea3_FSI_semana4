@@ -136,7 +136,7 @@
             // 
             this.textBoxCodigo.Location = new System.Drawing.Point(126, 51);
             this.textBoxCodigo.Name = "textBoxCodigo";
-            this.textBoxCodigo.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCodigo.Size = new System.Drawing.Size(133, 20);
             this.textBoxCodigo.TabIndex = 9;
             // 
             // textBoxVendedor
@@ -150,7 +150,7 @@
             // 
             this.textBoxVentas.Location = new System.Drawing.Point(126, 117);
             this.textBoxVentas.Name = "textBoxVentas";
-            this.textBoxVentas.Size = new System.Drawing.Size(100, 20);
+            this.textBoxVentas.Size = new System.Drawing.Size(133, 20);
             this.textBoxVentas.TabIndex = 11;
             // 
             // btnAgregar
@@ -167,27 +167,29 @@
             // 
             this.button2.Location = new System.Drawing.Point(29, 401);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(128, 23);
             this.button2.TabIndex = 13;
-            this.button2.Text = "button2";
+            this.button2.Text = "Mayor venta del mes";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(219, 401);
+            this.button3.Location = new System.Drawing.Point(205, 401);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(131, 23);
             this.button3.TabIndex = 14;
-            this.button3.Text = "button3";
+            this.button3.Text = "Menor venta del mes";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(391, 401);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(148, 23);
             this.button4.TabIndex = 15;
-            this.button4.Text = "button4";
+            this.button4.Text = "Promedio ventas mensual";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5

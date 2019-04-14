@@ -28,15 +28,33 @@ namespace Tarea3_FSI
             objvendedor = new Cvendedor(auxcodigo, auxnombre, auxmonto);
             if(objarreglo.Insertar(objvendedor,auxcodigo)==1)
             {
-                MessageBox.Show("mal");
+                MessageBox.Show("Ha repetido Codigo ¡Estafador!");
             }
             else
             {
                 listBoxCodigo.Items.Add(auxcodigo.ToString());
                 listBoxVendedor.Items.Add(auxnombre);
-                listBoxVentas.Items.Add(auxnombre.ToString());
+                listBoxVentas.Items.Add(auxmonto.ToString());
+                textBoxCodigo.Clear();
+                textBoxVendedor.Clear();
+                textBoxVentas.Clear();
+
             }
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string mostrar = objarreglo.Mostrar_Mayor();
+
+            MessageBox.Show("Nombre: "+mostrar);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string aux = objarreglo.Mostrar_Menor();
+
+            MessageBox.Show("Nombre: " + aux);
         }
     }
 }
